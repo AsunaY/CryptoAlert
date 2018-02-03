@@ -48,9 +48,9 @@ public class PriceMessage {
     }
 
     public void sendMessage(){
-        double ask = reverse ? 10/ticker.getAsk().doubleValue()/10 : ticker.getAsk().doubleValue();
-        double high = reverse ? 10/ticker.getHigh().doubleValue()/10 : ticker.getHigh().doubleValue();
-        double low = reverse ? 10/ticker.getLow().doubleValue()/10 : ticker.getLow().doubleValue();
+        double ask = reverse ? 1/ticker.getAsk().doubleValue() : ticker.getAsk().doubleValue();
+        double high = reverse ? 1/ticker.getHigh().doubleValue() : ticker.getHigh().doubleValue();
+        double low = reverse ? 1/ticker.getLow().doubleValue() : ticker.getLow().doubleValue();
         //double volume = reverse ? 10/ticker.getVolume().doubleValue()/10 : ticker.getVolume().doubleValue();
         String pairName = reverse ? currencyPair.counter.toString() + " to " + currencyPair.base.toString() :
                 currencyPair.base.toString() + " to " + currencyPair.counter.toString();
