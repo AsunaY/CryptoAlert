@@ -8,6 +8,8 @@ import org.knowm.xchange.binance.dto.BinanceException;
 import org.knowm.xchange.currency.Currency;
 import org.knowm.xchange.currency.CurrencyPair;
 
+import java.util.HashMap;
+
 public class MessageListener implements EventListener{
 
     public void onEvent(Event event){

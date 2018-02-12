@@ -57,8 +57,8 @@ public class PriceMessage {
         EmbedBuilder embedBuilder = new EmbedBuilder();
         embedBuilder.setTitle(pairName);
         embedBuilder.addField("Asking Price", String.valueOf(ask), true);
-        embedBuilder.addField("24 Hour Low", String.valueOf(high), true);
-        embedBuilder.addField("24 Hour High", String.valueOf(low), true);
+        embedBuilder.addField("24 Hour Low", String.valueOf(low), true);
+        embedBuilder.addField("24 Hour High", String.valueOf(high), true);
         //embedBuilder.addField("24 Hour Volume", String.valueOf(volume), true);
         embedBuilder.setAuthor("Crypto Bot");
         embedBuilder.setColor(Color.CYAN);
